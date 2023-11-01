@@ -1,5 +1,8 @@
-def greet(name):
-  """Prints a greeting to the user."""
-  print("Hello, " + name)
+def factorial(n):
+    result = 1
+    for i in range(1, n + 1):
+        result *= i
+    return result
 
-greet("Alice")
+num = int(input("Enter a number: "))
+print(f"The factorial of {num} is {factorial(num)}")
